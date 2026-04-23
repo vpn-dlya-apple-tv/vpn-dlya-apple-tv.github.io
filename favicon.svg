@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#9146FF"/>
+      <stop offset="100%" stop-color="#00C4A3"/>
+    </linearGradient>
+    <linearGradient id="scr" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#130823"/>
+      <stop offset="100%" stop-color="#0D0619"/>
+    </linearGradient>
+    <filter id="glow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="0.8" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <!-- TV body rounded rect -->
+  <rect x="1" y="3.5" width="30" height="20" rx="3" fill="url(#bg)"/>
+  <!-- Screen -->
+  <rect x="3.5" y="6" width="25" height="14.5" rx="1.5" fill="url(#scr)"/>
+  <!-- Shield -->
+  <path d="M16 8.5 L21.5 11 L21.5 16 Q21.5 20 16 22 Q10.5 20 10.5 16 L10.5 11 Z" fill="#9146FF" opacity="0.85" filter="url(#glow)"/>
+  <path d="M16 9.8 L20.5 12 L20.5 16 Q20.5 19.2 16 21 Q11.5 19.2 11.5 16 L11.5 12 Z" fill="none" stroke="#00E5BE" stroke-width="0.6"/>
+  <!-- Checkmark -->
+  <path d="M13.2 15.8 L15.5 18.1 L18.8 13" stroke="#fff" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- Stand -->
+  <rect x="13.5" y="23.5" width="5" height="1.4" rx="0.7" fill="#7B2FBE"/>
+  <rect x="11" y="24.9" width="10" height="1.8" rx="0.9" fill="#7B2FBE"/>
+  <!-- Accent dot -->
+  <circle cx="26.8" cy="7.5" r="1.1" fill="#00E5BE" opacity="0.9"/>
+</svg>
